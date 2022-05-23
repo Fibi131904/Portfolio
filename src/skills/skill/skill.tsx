@@ -6,12 +6,12 @@ title:string
 discription:string
 }
 
-export const Skill = (props:SkillPropsType) => {
+export const Skill = (props: SkillPropsType) => {
     return (
         <div className={style.skill}>
-           <div className={style.icon}></div> 
-           <h3>{props.title}</h3>
-          <span className={style.discription}>{props.discription}</span>
+            <div className={style.icon}></div>
+            <h3>{props.title}</h3>
+            <span className={style.discription}>{props.discription}</span>
         </div >
     )
 }
