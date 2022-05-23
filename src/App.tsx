@@ -1,10 +1,15 @@
 import React from 'react';
-import style from'./Header.module.css';
+import { Header } from './header/Header';
+import { Main } from './main/Main';
+import { Skills } from './skills/Skills';
+
 
 function App() {
   return (
-    <div className={style.header}>
-      
+    <div>
+      <Header/>
+      <Main/>
+     <Skills/>
     </div>
   );
 }
