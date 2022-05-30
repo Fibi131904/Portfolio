@@ -1,0 +1,15 @@
+.distantWorkBlock {
+    height: 50vh;
+    background-color: rgb(158, 201, 162);
+  }
+
+ .contant {
+    flex-direction: column;
+    justify-content:space-between;
+}
+ 
+.title {
+    background-color: rgb(118, 121, 115);
+
+}
+
