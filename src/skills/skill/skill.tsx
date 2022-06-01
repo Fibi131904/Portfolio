@@ -1,9 +1,9 @@
 import React from 'react';
-import style from'./Skill.module.css';
+import style from './Skill.module.css';
 
-type SkillPropsType={
-title:string
-discription:string
+type SkillPropsType = {
+    title: string
+    discription: string
 }
 
 export const Skill = (props: SkillPropsType) => {

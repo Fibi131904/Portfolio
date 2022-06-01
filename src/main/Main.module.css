@@ -1,12 +1,13 @@
-.mainBlock{
+.mainBlock {
     height: 100vh;
     background-color: bisque;
 }
 
-.text{
+.text {
     width: 300px;
     background-color: rgb(201, 194, 180)
 }
+
 .photo {
     width: 300px;
     height: 400px;
