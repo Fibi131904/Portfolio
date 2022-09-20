@@ -10,9 +10,11 @@ export const Project = (props: ProjectPropsType) => {
     return (
         <div className={style.project}>
             <div className={style.projectImg}>
-                <a href='' className={style.project_button}>Смотреть</a>
+                <a href='' className={style.viewBtn}>view</a>
             </div>
-            <h3 className={style.title}>{props.title}</h3>
+            <div className={style.projectTitle}>
+                <h3 >{props.title}</h3>
+            </div>
             <span className={style.discription}>{props.discription}</span>
 
         </div >

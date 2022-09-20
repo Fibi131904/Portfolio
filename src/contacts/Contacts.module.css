@@ -4,12 +4,13 @@
 }
 
 .contacts {
+  
     flex-direction: column;
     justify-content: space-around;
     border:1px solid;
 }
 
 .title {
+    text-align: center;
     background-color: rgb(118, 121, 115);
 }
-

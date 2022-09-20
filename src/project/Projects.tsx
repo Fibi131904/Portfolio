@@ -1,6 +1,9 @@
 import React from 'react';
 import { Project } from './Project';
+import styleContainer from '../common/styles/Container.module.css';
 import style from './Projects.module.css';
+import { Title } from '../common/title/Title';
+
 
 
 
@@ -8,11 +11,11 @@ import style from './Projects.module.css';
 export const Projects = () => {
     return (
         <div className={style.projectsBlock}>
-            <div className={style.projectsContainer}>
-                <h2 className={style.title}>Мои работы</h2>
+            <div className={`${styleContainer.container} ${style.projectsContainer}`}>
+                <Title text={'Projects'}/>
                 <div className={style.projects} >
-                    <Project title={'Название проекта 1'} discription={'Краткое описание. Кратко расскажите суть своего проекта так, чтобы, прочитав вступление, спонсор уже был готов поддержать вашу идею.'} />
-                    <Project title={'Название проекта 2'} discription={'Краткое описание. Кратко расскажите суть своего проекта так, чтобы, прочитав вступление, спонсор уже был готов поддержать вашу идею.'} />
+                    <Project title={'Social network'} discription={'description of your project. Brief and clea.'} />
+                    <Project title={'Todo list'} discription={'description of your project. Brief and clea'} />
                 </div>
             </div>
         </div>
