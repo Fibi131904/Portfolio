@@ -1,6 +1,6 @@
 
 import React from 'react';
-import style from './Footer.module.css';
+import style from './Footer.module.scss';
 
 
 
@@ -11,7 +11,7 @@ export const Footer = () => {
         <div className={style.footerBlock} >
 
             <div className={style.container}>
-                <h3 className={style.title}>Смирнова Ксения</h3>
+                <h3 className={style.title}>Ksenia Smirnova</h3>
                 <div className={style.icons}>
                     <div className={style.icon}></div>
                     <div className={style.icon}></div>

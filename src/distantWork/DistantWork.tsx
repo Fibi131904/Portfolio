@@ -1,6 +1,6 @@
 
 import React from 'react';
-import style from './DistantWork.module.css';
+import style from './DistantWork.module.scss';
 import styleContainer from '../common/styles/Container.module.css';
 
 
@@ -9,8 +9,8 @@ export const DistantWork = () => {
         <div className={style.distantWorkBlock} >
 
             <div className={`${styleContainer.container} ${style.contant}`}>
-                <h2 className={style.title}>Рассматриваю варианты удаленной работы</h2>
-                <button onClick={() => { }} >Нанять меня</button>
+                <h2 className={style.title}>Ready to work remotely</h2>
+                <button onClick={() => { }} >Write me</button>
             </div>
 
         </div >

@@ -1,6 +1,8 @@
+@import'../common/styles/sass/variables.scss';
+
 .distantWorkBlock {
     height: 50vh;
-    background-color: rgb(158, 201, 162);
+    background-color: $bgSecondColor;
 }
 
 .contant {
@@ -10,7 +12,9 @@
 }
 
 .title {
-    background-color: rgb(118, 121, 115);
+ 
     text-align: center;
+    color:$textColor;
+    font-family: $titleFontFamily;
 }
 

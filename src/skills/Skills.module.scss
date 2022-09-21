@@ -1,6 +1,8 @@
+@import'../common/styles/sass/variables.scss';
+
 .skillsBlock {
     min-height: 100vh;
-    background-color: rgb(188, 216, 138);
+    background-color: $bgSecondColor;
     
 }
 
@@ -16,7 +18,7 @@
 }
 
 .skills {
-    border: 1px solid;
+   
     width: 100%;
     display: flex;
     justify-content: space-between;

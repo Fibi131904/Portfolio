@@ -1,0 +1,27 @@
+@import'../common/styles/sass/variables.scss';
+
+.mainBlock {
+    height: 100vh;
+    background-color: $bgColor;
+}
+.container{
+height: 100%; 
+width: 80%;
+margin:0  auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.text {
+    width: 300px;
+    font-family: $titleFontFamily;
+    color: $textColor;
+}
+
+.photo {
+    width: 300px;
+    height: 400px;
+    background-color: $bgSecondColor;
+}
