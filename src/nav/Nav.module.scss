@@ -1,11 +1,13 @@
+@import'../common/styles/sass/variables.scss';
+
 .nav {
-    border: 1px solid black;
     width: 300px;
     display: flex;
     justify-content: space-between;
-    padding: 2px;
     box-sizing: border-box;
     flex-wrap: wrap;
+    margin-right: 10px;
+    font-family: $textFontFamily;
 
       
 }
