@@ -18,7 +18,7 @@ export const Footer = () => {
                     <div className={style.icon}></div>
                     <div className={style.icon}></div>
                 </div>
-                <div className={style.copyright}> &#169; 2022 Все права защищены</div>
+                <div className={style.copyright}> &#169; 2022 beingeorge, All Rights Reserved.</div>
             </div>
 
         </div >

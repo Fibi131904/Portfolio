@@ -13,7 +13,7 @@ import { Title } from '../common/title/Title';
 export const Skills = () => {
     return (
         <div className={style.skillsBlock}>
-            <div className={`${styleContainer.container} ${style.skillsContainer}`}>
+            <div className={style.skillsContainer} >
                 <Title text={'Skills'} />
                 <div className={style.skills}>
                     <Skill title={'JS'} discription={'HTML5, CSS (SASS, SCSS, LESS) + responsive, JavaScript (ES6+), React.js + Redux, AntD, JQuery, Bootstrap, NPM, Gulp, Webpack, GitLab, GitHub'} />
