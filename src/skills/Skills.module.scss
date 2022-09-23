@@ -3,26 +3,28 @@
 .skillsBlock {
     min-height: 100vh;
     background-color: $bgSecondColor;
-    padding: 100px 0;
-    
-}
 
-.skillsContainer {
-    flex-direction: column;
-    justify-content: flex-start;
-  
-    
-}
+    .skillsContainer {
+        height: 100%;
+        width: 80%;
+        margin: 0 auto;
+        border: 1px solid $bgSecondColor;
+              
+        .skills {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
 
-
-.skills {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    
-}
-@media screen and (max-width:498px) {
-    .skills  {
-        justify-content: center;
+            @media screen and (max-width:624px) {
+                justify-content: center;
+            }
+        }
     }
 }
+
+
+
+
+
+
+

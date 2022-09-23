@@ -9,9 +9,9 @@ import { Title } from '../common/title/Title';
 export const DistantWork = () => {
     return (
         <div className={style.distantWorkBlock} >
-            <div className={style.contant}>
+            <div>
                 <Title text={'Ready to work remotely'} />
-                <div>
+                <div  className={style.contant}>
                     <Button onClick={() => { }} >Write me</Button>
                 </div>
             </div>

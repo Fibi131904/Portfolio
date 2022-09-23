@@ -3,17 +3,18 @@
 .distantWorkBlock {
     min-height: 50vh;
     background-color: $bgSecondColor;
-    
+    border:1px solid  $bgSecondColor;
+    .contant {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between; 
+    }
+
 }
 
-.contant {
-    display: flex;
-    flex-direction: column;
-    min-height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 
 
 
