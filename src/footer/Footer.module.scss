@@ -3,7 +3,7 @@
 
 
 .footerBlock {
-    height: 30vh;
+   min-height: 20vh;
     background-color: $bgSecondColor;
 }
 
@@ -28,6 +28,7 @@
 
 .copyright {
     text-align: center;
+    color:rgba(255, 255, 255, .5);
 }
 
 .icon {
