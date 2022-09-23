@@ -1,15 +1,14 @@
 @import'../common/styles/sass/variables.scss';
+@import'../common/styles/sass/mixins.scss';
 
 .projectsBlock {
     min-height: 100vh;
     background-color: $bgColor;
-    border:1px solid $bgColor;
+    border: 1px solid $bgColor;
 
     .projectsContainer {
-        height: 100%;
-        width: 80%;
-        margin: 0 auto;
-       
+        @include container(100%, 80%, 0 auto);
+
         .projects {
             display: flex;
             justify-content: space-between;

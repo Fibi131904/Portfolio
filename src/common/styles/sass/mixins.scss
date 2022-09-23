@@ -6,3 +6,9 @@
     line-height: $lineHeight;
     color: $textColor;
   }
+
+  @mixin container ($height, $width, $margin) {
+    height: $height;
+        width: $width;
+        margin: $margin;
+  }
