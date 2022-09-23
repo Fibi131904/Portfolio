@@ -6,7 +6,7 @@
     background-color: $bgSecondColor;
 
     .skillsContainer {
-        @include container(100%, 80%, 0 auto);
+        @include container();
         border: 1px solid $bgSecondColor;
               
         .skills {

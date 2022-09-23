@@ -1,15 +1,15 @@
 
 import React from 'react';
-import style from'./Form.module.css';
-import styleContainer from '../common/styles/Container.module.css';
+import style from'./Form.module.scss';
+
 
 
 export const Form = () => {
     return (
-        <div className={style.formBlock}>
-        <input/>
-        <input/>
-        <textarea/>
-        </div>
+        <form className={style.formBlock}>
+        <input type='text' placeholder='Name' className={style.formArea}/>
+        <input type='text' placeholder='e-mail' className={style.formArea}/>
+        <textarea placeholder='message' className={style.messageArea}/>
+        </form>
     );
 }

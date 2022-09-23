@@ -6,7 +6,7 @@
     background-color: $bgColor;
 
     .container {
-        @include container(100%, 80%, 0 auto);
+        @include container();
          display: flex;
         align-items: center;
         justify-content: space-between;

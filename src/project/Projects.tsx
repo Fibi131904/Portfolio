@@ -1,6 +1,5 @@
 import React from 'react';
 import { Project } from './Project';
-import styleContainer from '../common/styles/Container.module.css';
 import style from './Projects.module.scss';
 import { Title } from '../common/title/Title';
 import todoImage from './../assets/image/todo-list.webp'
