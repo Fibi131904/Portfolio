@@ -16,7 +16,7 @@ export const Project = (props: ProjectPropsType) => {
                 <Button text={'View'}/>
             </div>
             <div className={style.projectInfo}>
-                <h3 className={style.projectTitle} >{props.title}</h3>
+                <h3 className={style.projectTitle}>{props.title}</h3>
                 <span className={style.discription}>{props.discription}</span>
             </div>
         </div >
