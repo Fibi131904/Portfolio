@@ -1,22 +1,25 @@
 @import'../common/styles/sass/variables.scss';
+@import'../common/styles/sass/mixins.scss';
 
 .distantWorkBlock {
     min-height: 30vh;
     background-color: $bgSecondColor;
-    border:1px solid  $bgSecondColor;
 
-    .contant {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    justify-content: space-between; 
+    .contacts {
+        @include container();
+      
+
+        .contant {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            justify-content: space-between;
+        }
+
     }
 
 }
-
-
-
 
 
 

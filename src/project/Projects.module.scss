@@ -6,8 +6,10 @@
     background-color: $bgColor;
     border: 1px solid $bgColor;
 
+
     .projectsContainer {
         @include container();
+       
 
         .projects {
             display: flex;

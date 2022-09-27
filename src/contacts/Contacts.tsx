@@ -4,18 +4,22 @@ import React from 'react';
 
 import { Title } from '../common/title/Title';
 import style from './Contacts.module.scss';
-import { Form } from './Form';
+
 
 
 export const Contacts = () => {
     return (
         <div className={style.contactBlock}>
-            <div >
+            <div className={style.contacts}>
                 <Title text={'Contacts'} />
-                <div className={style.contacts}>
-                    <Form />
+                <form className={style.formBlock}>
+                    <input type='text' placeholder='Name' className={style.formArea} />
+                    <input type='text' placeholder='e-mail' className={style.formArea} />
+                    <textarea placeholder='message' className={style.messageArea} />
                     <button type='submit'>Send</button>
-                </div>
+                </form>
+
+
             </div>
 
         </div>

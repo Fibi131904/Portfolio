@@ -3,38 +3,41 @@
 
 
 .footerBlock {
-   min-height: 20vh;
+    min-height: 20vh;
     background-color: $bgSecondColor;
+
+    .container {
+        @include container();
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        .icons {
+            width: 280px;
+            
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            .icon {
+                height: 50px;
+                border: 1px solid;
+                width: 50px;
+                background-color: $bgColor;
+                color: $textColor;
+            }
+        }
+
+        .copyright {
+            text-align: center;
+            color: rgba(255, 255, 255, .5);
+        }
+    }
+
 }
 
-.container {
-    @include container();
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
-.title {
-    color: $textColor;
-    text-align: center;
-}
 
-.icons {
-    width: 280px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
 
-.copyright {
-    text-align: center;
-    color:rgba(255, 255, 255, .5);
-}
 
-.icon {
-    height: 50px;
-    border: 1px solid;
-    width: 50px;
-    background-color: $bgColor;
-    color: $textColor;
-}

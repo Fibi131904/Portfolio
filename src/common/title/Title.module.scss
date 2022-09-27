@@ -1,11 +1,11 @@
 @import'../styles/sass/variables.scss';
 .title {
     text-align: center;
-    margin: 0 0 30px;
+    margin: 0 0 60px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     color: $textColor;
-    font-size: 36px;
+    font-size: 28px;
     text-transform: capitalize;
     line-height: 1.2;
     letter-spacing: 5px;
@@ -18,10 +18,10 @@
     &::before {
         content: '';
         position: absolute;
-        background: $primaryColor;
+        background-color: $primaryColor;
         width: 55px;
         height: 1px;
-        bottom: -30px;
+        bottom: -20px;
         left: 50%;
         transform: translate(-50%, 50%);
     }

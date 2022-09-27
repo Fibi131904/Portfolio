@@ -8,10 +8,10 @@ import { Title } from '../common/title/Title';
 export const DistantWork = () => {
     return (
         <div className={style.distantWorkBlock} >
-            <div>
+            <div className={style.contacts}>
                 <Title text={'Ready to work remotely'} />
-                <div  className={style.contant}>
-                    <Button  text={'Write me'}/>
+                <div className={style.contant}>
+                    <Button text={'Write me'} />
                 </div>
             </div>
         </div >

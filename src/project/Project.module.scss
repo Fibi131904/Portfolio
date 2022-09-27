@@ -44,14 +44,16 @@
         padding: 25px 20px;
 
         .projectTitle {
-            @include text($titleFontFamily, 16px, 1.2);
+            @include text($titleFontFamily, 16px, 1.2, 700);
             letter-spacing: 1px;
             margin: 0 0 5px;
+            color: $textColor;
         }
 
         .discription {
-            @include text($textFontFamily, 12px, 1.8);
+            @include text($textFontFamily, 12px, 1.8, 700);
             font-weight: 400;
+            color: $textColor;
         }
     }
 }
