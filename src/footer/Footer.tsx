@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Title } from '../common/title/Title';
 import style from './Footer.module.scss';
 
 
@@ -12,7 +11,7 @@ export const Footer = () => {
         <div className={style.footerBlock} >
 
             <div className={style.container}>
-                <Title text={'Ksenia Smirnova'}/>
+                <h2>Ksenia Smirnova</h2>
                 <div className={style.icons}>
                     <div className={style.icon}></div>
                     <div className={style.icon}></div>

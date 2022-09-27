@@ -10,8 +10,8 @@ export const DistantWork = () => {
         <div className={style.distantWorkBlock} >
             <div className={style.contacts}>
                 <Title text={'Ready to work remotely'} />
-                <div className={style.contant}>
-                    <Button text={'Write me'} />
+                <div className={style.contant} >
+                    <Button  text={'Write me'} />
                 </div>
             </div>
         </div >

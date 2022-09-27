@@ -4,12 +4,13 @@
 .projectsBlock {
     min-height: 100vh;
     background-color: $bgColor;
-    border: 1px solid $bgColor;
+   
 
 
     .projectsContainer {
         @include container();
-       
+        border: 1px solid $bgSecondColor;
+        padding: 30px;
 
         .projects {
             display: flex;

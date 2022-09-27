@@ -3,23 +3,16 @@
 @import'../common/styles/sass/mixins.scss';
 
 .contactBlock {
-    min-height: 65vh;
+    min-height: 68vh;
     background-color: $bgColor;
-    border: 1px solid $bgColor;
-
-
+   
 .contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     @include container();
-  
-    button[type='submit'] {
-        @extend .btn;
-        align-self: center;
-        background-color: transparent;
-      
-    }
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   
 }
 .formBlock {
     display: flex;
@@ -28,6 +21,12 @@
     width: 50%;
     height: 130px;
     margin-bottom: 20px;
+    button[type='submit'] {
+        @extend .btn;
+        align-self: center;
+        background-color: transparent;
+      
+    }
 
     @media screen and(max-width: 372px) {
         width: 100%
