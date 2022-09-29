@@ -46,7 +46,8 @@
             h1 {
                 @include text($textFontFamily, 20px, 1.2, 400);
                 margin: 0;
-            }
+                color: $primaryColor;
+                }
 
             @media screen and (max-width: 1143px) {
                 align-items: center;

@@ -11,12 +11,17 @@
     font-family: $textFontFamily;
     padding: 20px;
     box-sizing: border-box;
-}
 
-.icon {
-    height: 60px;
-    width: 60px;
-    background-color: $bgSecondColor;
-    border: 1px solid;
-    font-size: 30px;
+    .icon {
+        line-height: 2em;
+        height: 60px;
+        width: 60px;
+        background-color: $bgSecondColor;
+        border: 2px solid $primaryColor;
+        font-size: 30px;
+    }
+
+    h3 {
+        color: $primaryColor
+    }
 }

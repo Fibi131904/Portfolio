@@ -1,39 +1,30 @@
 @import'../../styles/sass/variables.scss';
+@import '../../styles/sass/mixins.scss';
 
 .btn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
+  @include flex(column, center, center, nowrap);
   font: 400 14px/1.2 'Poppins', sans-serif;
   text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 1px;
-  padding: 8px 20px;
+  font-size: 14px;
+  color: $primaryColor;
+  border: 2px solid $primaryColor;
   max-width: 120px;
   width: 100%;
-  color: $textColor;
-  outline: none;
-  position: relative;
-  z-index: 0;
-  border: none;
-  text-decoration: none;
+  line-height: 46px;
+  letter-spacing: .12em;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
 
-  &::after {
-    content: '';
-    position: absolute;
-    transition: all 0.2s ease-in-out;
-    width: 50%;
-    height: 10px;
-    background: $primaryColor;
-    bottom: 0;
-    z-index: -1;
-  }
+
+  &:after, :before {
+    box-sizing: border-box;
+}
 
   &:hover {
-    text-decoration: none;
-    color: $textColor;
+    background: #e4aa48;
+  color: #000;
+  transition: .3s ease-out;
 
     &::after {
       width: 100%;

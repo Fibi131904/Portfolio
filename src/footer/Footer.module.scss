@@ -25,21 +25,19 @@
 
             .icon {
                 height: 50px;
-                border: 1px solid;
                 width: 50px;
-                background-color: $bgColor;
                 color: $textColor;
+                font-size: 30px;
             }
         }
 
         .copyright {
             text-align: center;
-            color: rgba(255, 255, 255, .5);
+            color: $primaryColor;
+            
         }
     }
-
 }
-
 
 
 

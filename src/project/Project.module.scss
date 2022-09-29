@@ -10,7 +10,7 @@
     background-color: $bgSecondColor;
 
     .projectImg {
-        height: 250px;
+        height: 300px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -31,8 +31,8 @@
         }
 
         .viewBtn {
-            padding: 10px 20px;
-            background-color: $primaryColor;
+            width: 150px;
+            height: 50px;
             font-family: 'Josefin Sans', sans-serif;
             position: relative;
             z-index: 1;
@@ -47,7 +47,7 @@
             @include text($titleFontFamily, 16px, 1.2, 700);
             letter-spacing: 1px;
             margin: 0 0 5px;
-            color: $textColor;
+            color: $primaryColor;
         }
 
         .discription {

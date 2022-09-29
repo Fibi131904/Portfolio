@@ -39,7 +39,7 @@
         border: 1px solid #4a4a4a;
         box-sizing: border-box;
         outline: none;
-        color: #495057;
+        color: $primaryColor;
         margin-bottom: 1.2em;
 
         &:-webkit-autofill {
@@ -83,7 +83,8 @@
         @extend .btn;
         align-self: center;
         background-color: transparent;
-      margin-top: 30px;
+        margin-top: 30px;
+        text-decoration: underline;
     }
 }
 }
