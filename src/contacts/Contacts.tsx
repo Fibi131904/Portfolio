@@ -2,6 +2,8 @@ import React from 'react';
 import { useFormik } from 'formik';
 import { Title } from '../common/title/Title';
 import style from './Contacts.module.scss';
+import { Fade } from 'react-awesome-reveal';
+
 
 
 type FormikErrorType = {
@@ -38,9 +40,11 @@ export const Contacts = () => {
           },
         })
     return (
-        <div className={style.contactBlock}>
+        <div id = 'contacts' className={style.contactBlock}>
+            <Fade >
             <div className={style.contacts}>
                 <Title text={'Contacts'} />
+              
                 <form className={style.formBlock} onSubmit={formik.handleSubmit}>
                     <input type='text' placeholder='name' className={style.formArea} name='name' onChange={formik.handleChange} value={formik.values.name}/>
                     {formik.touched.name && formik.errors.name ? <div style={{ color: 'red' }}>{formik.errors.name}</div> : null} 
@@ -50,10 +54,9 @@ export const Contacts = () => {
                     {formik.touched.message && formik.errors.message ? <div style={{ color: 'red' }}>{formik.errors.message}</div> : null}
                     <button type='submit'>Send</button>
                 </form>
-
-
+              
             </div>
-
+            </Fade>
         </div>
     );
 }

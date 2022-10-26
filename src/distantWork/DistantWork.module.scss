@@ -3,8 +3,7 @@
 
 .distantWorkBlock {
     min-height: 30vh;
-    background-color: $bgSecondColor;
-
+ 
     .contacts {
         @include container();
         padding: 30px;

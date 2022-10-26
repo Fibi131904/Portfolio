@@ -15,7 +15,7 @@ import { faCss3, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
 export const Skills = () => {
   
     return (
-        <div className={style.skillsBlock}>
+        <div id='skills' className={style.skillsBlock}>
             <div className={style.skillsContainer} >
                 <Title text={'Skills'} />
                 <div className={style.skills}>

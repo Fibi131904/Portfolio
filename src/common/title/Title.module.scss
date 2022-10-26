@@ -27,4 +27,26 @@
     }
 }
 
-
+// .title {
+//     margin: 0 0 30px;
+//     color: $textColor;
+//     text-transform: capitalize;
+//     letter-spacing: 5px;
+//     position: relative;
+  
+//     & h2 {
+//       margin: 0;
+//       @include text($titleFontFamily, 36px, 1.2,300);
+//     }
+  
+//     &::before {
+//       content: '';
+//       position: absolute;
+//       background: $primaryColor;
+//       width: 55px;
+//       height: 1px;
+//       bottom: -30px;
+//       left: 50%;
+//       transform: translate(-50%, 50%);
+//     }
+//   }

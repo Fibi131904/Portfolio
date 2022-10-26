@@ -1,6 +1,13 @@
 import React from 'react';
 import style from './Main.module.scss';
- import Particles from "react-tsparticles";
+import Particles from "react-tsparticles";
+import { Fade } from "react-awesome-reveal";
+import ReactTypingEffect from 'react-typing-effect';
+import Tilt from 'react-parallax-tilt'
+
+
+
+
 
 
  const particlesOptions = {
@@ -27,7 +34,7 @@ import style from './Main.module.scss';
       number: {
           density: {
               enable: true,
-              value_area: 1000,
+              value_area: 1500,
           },
           value: 150,
       },
@@ -39,28 +46,35 @@ import style from './Main.module.scss';
       },
   },
   fullScreen: {
-      enable: false
+      enable: false,
+
   }
 }
 
 
 export const Main = () => {
   
-  return (
-        <div className={style.mainBlock}>
-        <Particles className={style.particles} params={particlesOptions}/>
-           
+    return (
+        <div id='main' className={style.mainBlock}>
+            <Particles className={style.particles} params={particlesOptions} />
             <div className={style.container}>
-                <div className={style.greeting }>
-                    <span> Hi There </span>
-                    <span>I am Kseniya <span>Smirnova</span></span>
-                    <h1> Frontend Developer.</h1>
-                </div>
-
-                <div className={style.photo}>
-                    <div className={style.image}>
+                <Fade direction="left">
+                    <div className={style.greeting}>
+                        <span> Hi There </span>
+                        <span>I am Kseniya <span>Smirnova</span></span>
+                        <ReactTypingEffect
+                            text={["Frontend Developer."]}
+                        />
                     </div>
-                </div>
+                </Fade>
+                <Fade direction="right">
+                    <Tilt className="Tilt" >
+                    <div className={style.photo}>
+                        <div className={style.image}></div>
+                    </div>
+                    </Tilt>
+                    
+                </Fade>
             </div>
         </div >
 

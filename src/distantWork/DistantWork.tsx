@@ -7,7 +7,7 @@ import { Title } from '../common/title/Title';
 
 export const DistantWork = () => {
     return (
-        <div className={style.distantWorkBlock} >
+        <div id= 'distantWork' className={style.distantWorkBlock} >
             <div className={style.contacts}>
                 <Title text={'Ready to work remotely'} />
                 <div className={style.contant} >
