@@ -3,6 +3,7 @@ import { useFormik } from 'formik';
 import { Title } from '../common/title/Title';
 import style from './Contacts.module.scss';
 import { Fade } from 'react-awesome-reveal';
+import Button from '../common/components/button/Button';
 
 
 
@@ -52,7 +53,7 @@ export const Contacts = () => {
                     {formik.touched.email && formik.errors.email ? <div style={{ color: 'red' }}>{formik.errors.email}</div> : null}
                     <textarea placeholder='message' className={style.messageArea}  name='message' onChange={formik.handleChange} value={formik.values.message} />
                     {formik.touched.message && formik.errors.message ? <div style={{ color: 'red' }}>{formik.errors.message}</div> : null}
-                    <button type='submit'>Send</button>
+                    <Button type='submit'buttonTitle={'Send'}/>
                 </form>
               
             </div>

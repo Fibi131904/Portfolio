@@ -2,7 +2,6 @@
 @import'../common/styles/sass/mixins.scss';
 .mainBlock {
     height: 100vh;
-    color: $textColor;
     @include flex(row, center, center, nowrap);
     padding: 100px 0;
 
@@ -21,7 +20,7 @@
 
         .greeting {
             @include flex(column, flex-start, flex-start, nowrap);
-           
+            color: $textColor;
             span {
                 font-size: 16px;
 

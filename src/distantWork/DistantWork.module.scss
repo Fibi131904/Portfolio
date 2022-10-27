@@ -2,16 +2,19 @@
 @import'../common/styles/sass/mixins.scss';
 
 .distantWorkBlock {
-    min-height: 30vh;
+    height: 30vh;
+    padding: 100px;
+    
  
-    .contacts {
+    .contant {
         @include container();
-        padding: 30px;
+    @include flex(column, space-between, center, nowrap);
+    min-height: 20vh;
+        .send{
+            @include flex(column, center, center, nowrap);
+            margin-top: 15px
+        } 
 
-        .contant {
-            display: flex;
-            justify-content: center;
-         }
 
     }
 

@@ -5,6 +5,7 @@ import { Title } from '../common/title/Title';
 import todoImage from './../assets/image/todo-list.webp'
 import socialImage from './../assets/image/social-network.webp'
 import counter2 from './../assets/image/counter2.png'
+import { Zoom } from 'react-awesome-reveal';
 
 
 
@@ -24,7 +25,9 @@ export const Projects = () => {
     return (
         <div id= 'projects' className={style.projectsBlock}>
             <div className={style.projectsContainer}>
-                <Title text={'Projects'}/>
+                
+                     <Title text={'Projects'} />
+                
                 <div className={style.projects} >
                     <Project style={socialNetwork} title={'Social network'} discription={'Technology stack: ReactJS, TypeScript, Redux, RestAPI, Axios, Redux-Thunk, React-Router-Dom, Redux-Form, Formik, Ant Design'} />
                     <Project style={todoList} title={'Todo list'} discription={'Technology stack: ReactJS, TypeScript, Redux Toolkit, RestAPI, Axios, Redux-Thunk, Material UI, Unit testing, Storybook'} />

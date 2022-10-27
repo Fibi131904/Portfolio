@@ -3,19 +3,22 @@
 
 .btn {
   @include flex(column, center, center, nowrap);
-  font: 400 14px/1.2 'Poppins', sans-serif;
+  @include text($textFontFamily, 14px, 1.2, 400);
+  text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
   color: $primaryColor;
   border: 2px solid $primaryColor;
   max-width: 120px;
+  min-width: 120px;
+  height: 30px;
   width: 100%;
-  line-height: 46px;
+  line-height: 30px;
   letter-spacing: .12em;
   text-align: center;
   display: inline-block;
   cursor: pointer;
-
+  
 
   &:after, :before {
     box-sizing: border-box;

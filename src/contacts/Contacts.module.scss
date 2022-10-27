@@ -1,30 +1,30 @@
 @import'../common/styles/sass/variables.scss';
 @import '../common/components/button/Button.module.scss';
 @import'../common/styles/sass/mixins.scss';
+
 .contactBlock {
     min-height: 70vh;
 
     .contacts {
         @include container();
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(column, flex-start, center, nowrap);
     }
 
     .formBlock {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 50%;
-        min-height: 130px;
-        margin-bottom: 20px;
+        @include container();
+        @include flex(column, space-between, stretch, nowrap);
+        width: 540px;
+        margin-top: 60px;
+
+        @media screen and (max-width: 680px) {
+            width: 100%;
+            border: 1px solid;
+        }
 
         button[type='submit'] {
             @extend .btn;
             align-self: center;
             background-color: transparent;
-
         }
 
         @media screen and(max-width: 372px) {
@@ -49,11 +49,7 @@
                 &:focus {
                     border: 1px solid $bgSecondColor;
                 }
-
-
             }
-
-
         }
 
         .formArea {
@@ -77,12 +73,5 @@
             }
         }
 
-        button[type='submit'] {
-            @extend .btn;
-            align-self: center;
-            background-color: transparent;
-            margin-top: 30px;
-            text-decoration: underline;
         }
-    }
 }

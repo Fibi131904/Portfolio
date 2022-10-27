@@ -53,7 +53,7 @@ import Tilt from 'react-parallax-tilt'
 
 
 export const Main = () => {
-  
+
     return (
         <div id='main' className={style.mainBlock}>
             <Particles className={style.particles} params={particlesOptions} />

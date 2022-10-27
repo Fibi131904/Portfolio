@@ -1,17 +1,20 @@
 
 import React from 'react';
 import style from './DistantWork.module.scss';
-import Button from '../common/components/button/Button';
+import button from '../common/components/button/Button.module.scss';
 import { Title } from '../common/title/Title';
 
 
 export const DistantWork = () => {
     return (
-        <div id= 'distantWork' className={style.distantWorkBlock} >
-            <div className={style.contacts}>
+        <div id='distantWork' className={style.distantWorkBlock} >
+
+            <div className={style.contant}>
+              
                 <Title text={'Ready to work remotely'} />
-                <div className={style.contant} >
-                    <Button  text={'Write me'} />
+                
+                <div className={style.send} >
+                <a href={'#contacts'} className={button.btn}>Hire me</a>
                 </div>
             </div>
         </div >
