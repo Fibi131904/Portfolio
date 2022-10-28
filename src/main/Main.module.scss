@@ -1,5 +1,6 @@
 @import'../common/styles/sass/variables.scss';
 @import'../common/styles/sass/mixins.scss';
+
 .mainBlock {
     height: 100vh;
     @include flex(row, center, center, nowrap);
@@ -7,13 +8,13 @@
 
     .particles {
         position: absolute;
-        top: 0;
+        top: 80px;
         left: 0;
-        bottom: 0;
+        bottom: -200px;
         right: 0;
         opacity: .3;
-      }
-      
+    }
+
     .container {
         @include container();
         @include flex(row, space-around, center, wrap);
@@ -21,6 +22,7 @@
         .greeting {
             @include flex(column, flex-start, flex-start, nowrap);
             color: $textColor;
+
             span {
                 font-size: 16px;
 
@@ -47,14 +49,15 @@
                         }
                     }
                 }
+
                 &:nth-child(3) {
                     @include text($textFontFamily, 20px, 1.2, 400);
                     margin: 0;
                     color: $primaryColor;
-                    }
+                }
             }
 
-          
+
 
             @media screen and (max-width: 1143px) {
                 align-items: center;
@@ -64,10 +67,10 @@
 
         .photo {
             position: relative;
-            z-index: 0;
+            z-index: 1;
 
             @media screen and (max-width: 1143px) {
-                margin-top: 50%;
+                margin-top: 50px;
             }
         }
 
@@ -98,7 +101,7 @@
             }
         }
     }
-    }
+}
 
 
 

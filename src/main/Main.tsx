@@ -8,47 +8,45 @@ import Tilt from 'react-parallax-tilt'
 
 
 
+const particlesOptions = {
+    particles: {
+        color: {
+            value: 'yelloy',
+        },
+        links: {
+            color: '#e4aa48',
+            distance: 200,
+            enable: true,
+            opacity: 0.5,
+            width: 1,
+        },
+        collisions: {
+            enable: true,
+        },
+        move: {
+            enable: true,
+            random: false,
+            speed: 2,
+            straight: false,
+        },
+        number: {
+            density: {
+                enable: true,
+                value_area: 1500,
+            },
+            value: 150,
+        },
+        opacity: {
+            value: 0.7,
+        },
+        shape: {
+            type: 'circle',
+        },
+    },
+    fullScreen: {
+        enable: false,
 
-
- const particlesOptions = {
-  particles: {
-      color: {
-          value: 'yelloy',
-      },
-      links: {
-          color: '#e4aa48',
-          distance: 200,
-          enable: true,
-          opacity: 0.5,
-          width: 1,
-      },
-      collisions: {
-          enable: true,
-      },
-      move: {
-          enable: true,
-          random: false,
-          speed: 2,
-          straight: false,
-      },
-      number: {
-          density: {
-              enable: true,
-              value_area: 1500,
-          },
-          value: 150,
-      },
-      opacity: {
-          value: 0.7,
-      },
-      shape: {
-          type: 'circle',
-      },
-  },
-  fullScreen: {
-      enable: false,
-
-  }
+    }
 }
 
 
@@ -69,11 +67,11 @@ export const Main = () => {
                 </Fade>
                 <Fade direction="right">
                     <Tilt className="Tilt" >
-                    <div className={style.photo}>
-                        <div className={style.image}></div>
-                    </div>
+                        <div className={style.photo}>
+                            <div className={style.image}></div>
+                        </div>
                     </Tilt>
-                    
+
                 </Fade>
             </div>
         </div >
