@@ -5,7 +5,7 @@ import { Title } from '../common/title/Title';
 import todoImage from './../assets/image/todo-list.webp'
 import socialImage from './../assets/image/social-network.webp'
 import counter2 from './../assets/image/counter2.png'
-import { Zoom } from 'react-awesome-reveal';
+
 
 
 

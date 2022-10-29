@@ -1,14 +1,14 @@
 @import'../common/styles/sass/variables.scss';
+@import'../common/styles/sass/mixins.scss';
 
 .header {
+    @include flex(row, flex-end, center, nowrap);
     height: 80px;
     background-color: $bgSecondColor;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: fixed;
+   
     left: 0;
     right: 0;
     padding: 0 30px;
     z-index: 1;
+    
 }

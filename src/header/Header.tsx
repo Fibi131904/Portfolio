@@ -6,10 +6,12 @@ import { BurgerNav } from './nav/burgerNav/BurgerNav';
 
 export const Header = () => {
     return (
+       
         <div className={style.header}>
             <Nav/>
             <BurgerNav/>
         </div>
+        
     );
 }
 
