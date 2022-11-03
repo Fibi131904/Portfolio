@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import style from './BurgerNav.module.scss';
 import { Link } from 'react-scroll'
-import { icon } from '@fortawesome/fontawesome-svg-core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
