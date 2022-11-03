@@ -9,6 +9,7 @@ import emailjs from "emailjs-com"
 
 export const Contacts = () => {
     const [modalActive, setModalActive] = useState(false)
+   
 
     const sendEmail = (e: any) => {
         e.preventDefault()
@@ -16,6 +17,9 @@ export const Contacts = () => {
             .then((responce) => {
                 if (responce.text === "OK") {
                     setModalActive(true)
+                    setTimeout(() => {
+                        setModalActive(false);
+                    }, 3000);                   
                 }
             }, (error) => {
                 console.log(error.message)
@@ -23,13 +27,14 @@ export const Contacts = () => {
         e.target.reset()
     }
 
+
+
     return (
         <div id={'contacts'} className={style.contactBlock}>
             <Fade>
                 <div className={style.contacts}>
                     <Title text={'Contacts'} />
-
-                    <form onSubmit={sendEmail} id={'contact-form'} className={style.formBlock}>
+                        <form onSubmit={sendEmail} id={'contact-form'} className={style.formBlock}>
                         <input required placeholder={"Your name"} className={style.formArea} type={"text"}
                             name={"from_name"} />
                         <input required placeholder={"Your email"} className={style.formArea} type={"text"}
@@ -37,12 +42,13 @@ export const Contacts = () => {
                         <textarea required placeholder={"Your message"} className={style.messageArea}
                             name={"message"} />
                         <button type={'submit'} value={"Send"} className={style.button}>Send</button>
-                    </form>
+                        {modalActive && <div className={style.sendMessagecontainer}><div className={style.sendMessageInner}>Send message!</div></div>}
+                    </form>                   
                 </div>
-            </Fade>
+            </Fade>         
         </div >
     );
 };
 
-   
+
   

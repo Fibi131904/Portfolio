@@ -5,8 +5,8 @@
 .contactBlock {
     min-height: 70vh;
     padding-top: 100px;
-          padding-bottom: 100px;
-          
+    padding-bottom: 100px;
+
     .contacts {
         @include container();
         @include flex(column, flex-start, center, nowrap);
@@ -20,7 +20,7 @@
 
         @media screen and (max-width: 680px) {
             width: 100%;
-         
+
         }
 
         button[type='submit'] {
@@ -75,5 +75,14 @@
             }
         }
 
-        }
+    }
+
+    .sendMessagecontainer {
+        margin: 10px;
+    }
+
+    .sendMessageInner {
+        text-align: center;
+        color: $textColor
+    }
 }
